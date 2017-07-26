@@ -1,8 +1,6 @@
-# Since THERMOS is no longer being developed- and servers are reduced to using Sponge for 1.8+, this project is dedicated to renewing the ability for Minecraft servers to use native bukkit plugins along with Forge mods.
+# Contigo - ASCIIcat updated version attempt.
 
-# Contigo
-
-![Contigo](death_wish_nitro_brew_1024x1024.jpg)
+![Contigo](cat-thermos.jpg)
 <!--- ![Graph](http://i.mcstats.org/Thermos/Global+Statistics@2x.borderless.png) --->
 
 [![Build Status](https://travis-ci.org/ASCIIcat/Contigo.svg?branch=master)](https://travis-ci.org/ASCIIcat/Contigo/)
@@ -15,6 +13,9 @@
 Contigo is a fork of Thermos, a craftbukkit forge server for Minecraft 1.7.10. After Thermos was discontinued, Contigo was created to allow active members of the Minecraft coding community to optimize it and provide fixes in a timely manner.
 
 We hope to eliminate all issues with craftbukkit forge servers. In the end, we envision a seamless, low lag Contigo experience with support for new 1.8+ versions of Minecraft.
+
+### ASCIIcat version?
+Since 1.11 is now being used for a vast majority of current forge/ftb mods, as well as a need for it with regards to our own server. This is our attempt of updating Contigo/Thermos to a more recent version of Minecraft.
 
 Advantages over KCauldron:
 + Lag-lowering optimizations
@@ -82,7 +83,7 @@ All builds will be in `build/distributions`
 
 ✔ Aether II: isDonor function can lock up servers. [Fixed]
 
-✔ BungeeCord: It's been known for years that BungeeCord barely works with Forge & seems that it'll never be supported officially. [Fixed]
+✔ BungeeCord: It's been known for years that BungeeCord barely works with Forge & seems that it'll never be supported officially. [Fixed] Use [Waterfall](https://github.com/WaterfallMC/Waterfall) instead
 
 ✔ BuyCraftX: Doesn't seem to work with Thermos, info on why it doesn't is unknown currently. [Fixed]
 
