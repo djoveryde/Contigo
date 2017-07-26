@@ -1,7 +1,7 @@
 [submodule "bukkit"]
 	path = bukkit
-	url = https://github.com/CyberdyneCC/Thermos-Bukkit
+	url = https://hub.spigotmc.org/stash/scm/spigot/bukkit.git
 [submodule "forge"]
 	path = forge
 	url = https://github.com/MinecraftForge/MinecraftForge.git
-	branch = 1.7.10
+	branch = 1.11.2

@@ -2,14 +2,14 @@
 
 # Contigo
 
-![Contigo](contigo_icon.png)
+![Contigo](death_wish_nitro_brew_1024x1024.jpg)
 <!--- ![Graph](http://i.mcstats.org/Thermos/Global+Statistics@2x.borderless.png) --->
 
 [![Build Status](https://travis-ci.org/CyberdyneCC/Thermos.svg?branch=master)](https://travis-ci.org/CyberdyneCC/Thermos)
-![Minecraft Forge v10.13.4.1614][forge]
-![Minecraft v1.7.10][mc]
+![Minecraft Forge v13.20.1.2425][forge]
+![Minecraft v1.11.2][mc]
 ![Java JDK v1.8][java]
-![Spigot 1.7.10 Snapshot ][spigot]
+![Spigot 1.11.2 Snapshot ][spigot]
 
 ### What's Contigo?
 Contigo is a fork of Thermos, a craftbukkit forge server for Minecraft 1.7.10. After Thermos was discontinued, Contigo was created to allow active members of the Minecraft coding community to optimize it and provide fixes in a timely manner.
@@ -27,7 +27,7 @@ Advantages over KCauldron:
 Click [here](http://cyberdynecc.github.io/Thermos/install)
 
 <!--- ### Downloads
-#You can download the pre-built packages from [here](https://github.com/CyberdyneCC/Thermos/releases). 
+#You can download the pre-built packages from [here](https://github.com/CyberdyneCC/Thermos/releases).
 --->
 **Contigo is still in early alpha and you may encounter issues in using it with your server. You have been warned!**
 
@@ -46,7 +46,7 @@ Feel free to drop in on the Contigo Discord chat [here](https://discord.gg/cNpac
 
 ## Contributing
 
-Please read the [guide](https://github.com/gcallant/Contigo/blob/master/CONTRIBUTING.md) on how to contribute - Contigo always needs improvements :smile: 
+Please read the [guide](https://github.com/gcallant/Contigo/blob/master/CONTRIBUTING.md) on how to contribute - Contigo always needs improvements :smile:
 
 
 
@@ -71,7 +71,7 @@ Please read the [guide](https://github.com/gcallant/Contigo/blob/master/CONTRIBU
   `./gradlew setupCauldron jar`
 
 All builds will be in `build/distributions`
-  
+
 ## Updating sources
 * Update sources
   * `git pull origin master`
@@ -101,7 +101,7 @@ All builds will be in `build/distributions`
 ✔ SkinsRestorer: Latest working version is 10.4.4
 
 [Fixed]: http://gogs.tcpr.ca/TCPR/Fixes "Fixed"
-[forge]: https://img.shields.io/badge/Minecraft%20Forge-v10.13.4.1614-green.svg "Minecraft Forge v10.13.4.1614"
-[mc]: https://img.shields.io/badge/Minecraft-v1.7.10-green.svg "Minecraft 1.7.10"
+[forge]: https://img.shields.io/badge/Minecraft%20Forge-v13.20.1.2425-green.svg "Minecraft Forge v13.20.1.2425"
+[mc]: https://img.shields.io/badge/Minecraft-v1.11.2-green.svg "Minecraft 1.7.10"
 [java]: https://img.shields.io/badge/Java%20JDK-v1.8-blue.svg "Java JDK 8"
-[spigot]: https://img.shields.io/badge/Spigot-v1.7.10--R0.1--SNAPSHOT-lightgrey.svg "Spigot R0.1 Snapshot"
+[spigot]: https://img.shields.io/badge/Spigot-v1.11.2--R0.1--SNAPSHOT-lightgrey.svg "Spigot R0.1 Snapshot"

@@ -21,7 +21,9 @@ buildscript {
             name 'spigot'
             url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
         }
-
+        flatDir {
+           dirs 'libs'
+       }
         mavenCentral()
     }
     dependencies {
@@ -45,10 +47,10 @@ repositories {
         name 'sonatype'
         url 'http://oss.sonatype.org/content/repositories/snapshots/'
     }
-    maven {
-        name 'prok'
-        url 'https://repo.prok.pw/'
-    }
+//    maven {
+//        name 'prok'
+//        url 'https://repo.prok.pw/'
+//    }
     maven {
         name 'forge'
         url 'http://files.minecraftforge.net/maven'
@@ -62,19 +64,23 @@ repositories {
         url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
     }
 
+    flatDir {
+       dirs 'libs'
+   }
+
     mavenCentral()
 }
 
 minecraft {
-    version = '1.7.10'
+    version = '1.11.2'
     mcpVersion = '9.05'
     mainClass = 'cpw.mods.fml.relauncher.ServerLaunchWrapper'
     tweakClass = 'cpw.mods.fml.common.launcher.FMLTweaker'
     installerVersion = "1.4"
-    srgExtra "PK: org/bukkit/craftbukkit org/bukkit/craftbukkit/v1_7_R4"
+    srgExtra "PK: org/bukkit/craftbukkit org/bukkit/craftbukkit/v1_11_R1"
 }
 
-group = 'cyberdynecc'
+group = 'ASCIIcat'
 
 ext.buildInfoCached = null;
 
@@ -115,7 +121,7 @@ def gitInfo(String key) {
     return key ? gitInfoCached[key] : gitInfoCached;
 }
 
-ext.mcVersion = "1.7.10"
+ext.mcVersion = "1.11.2"
 ext.forgeVersion = VersionParser.parseForgeRevision(file('src/main/resources/fmlversion.properties'))
 ext.revision = project.hasProperty('revision') ? project.getProperty('revision') : buildInfo('nextBuildNumber')
 version = "${mcVersion}-${forgeVersion}.${revision}"
@@ -158,8 +164,9 @@ dependencies {
     libraries 'org.xerial:sqlite-jdbc:3.7.2'
     libraries 'mysql:mysql-connector-java:5.1.14'
     libraries 'javax.persistence:persistence-api:1.0.2'
-    libraries 'net.minecraft:server:1.7.10'
-    libraries 'pw.prok:KImagine:0.2.0@jar'
+    libraries 'net.minecraft:server:1.11.2'
+    //libraries 'pw.prok:KImagine:0.2.0@jar'
+    compile name: 'KImagine-0.2.0'
     libraries 'org.apache.httpcomponents:httpclient:4.4.1'
     libraries 'net.openhft:affinity:3.0.1'
     libraries 'org.fusesource.jansi:jansi:1.11'
@@ -194,12 +201,12 @@ def generateManifest(boolean legacy = false) {
             'Thermos-Channel'       : project.name,
             'Thermos-Version'       : project.version,
             'Thermos-Legacy'        : legacy,
-            'Implementation-Vendor' : 'CyberdyneCC',
+            'Implementation-Vendor' : 'ASCIIcat',
             'Implementation-Title'  : project.name,
             'Implementation-Version': project.version,
             'Specification-Vendor'  : 'Bukkit Team',
             'Specification-Title'   : 'Bukkit',
-            'Specification-Version' : '1.7.10-R0.1-SNAPSHOT',
+            'Specification-Version' : '1.11.2-R0.1-SNAPSHOT',
             'Forge-Version'         : VersionParser.parseForgeVersion(file('forge/src/main/java/net/minecraftforge/common/ForgeVersion.java'), file('src/main/resources/fmlversion.properties')),
             'TweakClass'            : 'cpw.mods.fml.common.launcher.FMLTweaker',
             'Main-Class'            : 'cpw.mods.fml.relauncher.ServerLaunchWrapper',
@@ -286,15 +293,21 @@ def getSignatureFiles = {
 }
 
 publishing {
+//    repositories {
+//        maven {
+//            name 'ProK'
+//            url 'https://repo.prok.pw/'
+//            credentials {
+//                username project.hasProperty('prokRepoUsername') ? prokRepoUsername : null
+//                password project.hasProperty('prokRepoPassword') ? prokRepoPassword : null
+//            }
+//        }
+//    }
+
     repositories {
-        maven {
-            name 'ProK'
-            url 'https://repo.prok.pw/'
-            credentials {
-                username project.hasProperty('prokRepoUsername') ? prokRepoUsername : null
-                password project.hasProperty('prokRepoPassword') ? prokRepoPassword : null
-            }
-        }
+      flatDir {
+         dirs 'libs'
+      }
     }
 
     publications {
@@ -322,9 +335,12 @@ tasks.generateProjectCauldron << {
     file.append('''
 repositories {
     clear()
-    maven {
-        name 'prok'
-        url 'https://repo.prok.pw/'
+//    maven {
+//        name 'prok'
+//        url 'https://repo.prok.pw/'
+//    }
+    flatDir {
+       dirs 'libs'
     }
     maven {
         name 'forge'

@@ -2,13 +2,13 @@
 +++ ../src-work/minecraft/org/bukkit/command/defaults/VersionCommand.java
 @@ -29,43 +29,19 @@
          if (!testPermission(sender)) return true;
- 
+
          if (args.length == 0) {
 -            sender.sendMessage("This server is running " + Bukkit.getName() + " version " + Bukkit.getVersion() + " (Implementing API version " + Bukkit.getBukkitVersion() + ")");
-+            sender.sendMessage("This server is running Thermos | https://github.com/CyberdyneCC/Thermos | " + Bukkit.getBukkitVersion() + " | " + Bukkit.getVersion());
++            sender.sendMessage("This server is running Thermos | https://github.com/ASCIIcat/Contigo | " + Bukkit.getBukkitVersion() + " | " + Bukkit.getVersion());
          } else {
 -            StringBuilder name = new StringBuilder();
- 
+
 -            for (String arg : args) {
 -                if (name.length() > 0) {
 -                    name.append(' ');
@@ -42,20 +42,20 @@
          }
          return true;
      }
- 
+
      private void describeToSender(Plugin plugin, CommandSender sender) {
 +	sender.sendMessage("Author: Fracica");
 +/*
          PluginDescriptionFile desc = plugin.getDescription();
          sender.sendMessage(ChatColor.GREEN + desc.getName() + ChatColor.WHITE + " version " + ChatColor.GREEN + desc.getVersion());
- 
+
 @@ -84,12 +60,12 @@
                  sender.sendMessage("Authors: " + getAuthors(desc));
              }
          }
 +*/
      }
- 
+
      private String getAuthors(final PluginDescriptionFile desc) {
 -        StringBuilder result = new StringBuilder();
 -        List<String> authors = desc.getAuthors();
@@ -68,11 +68,11 @@
 @@ -105,7 +81,7 @@
              result.append(authors.get(i));
          }
- 
+
 -        return result.toString();
 +        return result.toString();*/
      }
- 
+
      @Override
 @@ -113,9 +89,10 @@
          Validate.notNull(sender, "Sender cannot be null");
