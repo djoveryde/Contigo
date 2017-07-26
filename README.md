@@ -5,7 +5,7 @@
 ![Contigo](death_wish_nitro_brew_1024x1024.jpg)
 <!--- ![Graph](http://i.mcstats.org/Thermos/Global+Statistics@2x.borderless.png) --->
 
-[![Build Status](https://travis-ci.org/CyberdyneCC/Thermos.svg?branch=master)](https://travis-ci.org/CyberdyneCC/Thermos)
+[![Build Status](https://travis-ci.org/ASCIIcat/Contigo.svg?branch=master)](https://travis-ci.org/ASCIIcat/Contigo/)
 ![Minecraft Forge v13.20.1.2425][forge]
 ![Minecraft v1.11.2][mc]
 ![Java JDK v1.8][java]
