@@ -105,4 +105,4 @@ All builds will be in `build/distributions`
 [forge]: https://img.shields.io/badge/Minecraft%20Forge-v13.20.1.2425-green.svg "Minecraft Forge v13.20.1.2425"
 [mc]: https://img.shields.io/badge/Minecraft-v1.11.2-green.svg "Minecraft 1.7.10"
 [java]: https://img.shields.io/badge/Java%20JDK-v1.8-blue.svg "Java JDK 8"
-[spigot]: https://img.shields.io/badge/Spigot-v1.11.2--R0.1--SNAPSHOT-lightgrey.svg "Spigot R0.1 Snapshot"
+[spigot]: https://img.shields.io/badge/Spigot-v1.11.2--R0.1--SNAPSHOT-green.svg "Spigot R0.1 Snapshot"

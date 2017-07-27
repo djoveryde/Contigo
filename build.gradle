@@ -28,7 +28,7 @@ buildscript {
     }
     dependencies {
 //        classpath files('FGS.jar')
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.0-SNAPSHOT'
     }
 }
 
@@ -37,7 +37,7 @@ tasks.whenTaskAdded {
 }
 
 apply plugin: 'maven'
-apply plugin: 'cauldron'
+// apply plugin: 'cauldron'
 apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
@@ -73,7 +73,7 @@ repositories {
 
 minecraft {
     version = '1.11.2'
-    mcpVersion = '9.05'
+    mcpVersion = '31.1'
     mainClass = 'cpw.mods.fml.relauncher.ServerLaunchWrapper'
     tweakClass = 'cpw.mods.fml.common.launcher.FMLTweaker'
     installerVersion = "1.4"
