@@ -1,4 +1,6 @@
-# Contigo - djoveryde updated version attempt.
+# Since THERMOS is no longer being developed- and servers are reduced to using Sponge for 1.8+, this project is dedicated to renewing the ability for Minecraft servers to use native bukkit plugins along with Forge mods.
+
+# Contigo
 
 ![Contigo](contigo_icon.png)
 [![Build Status](https://travis-ci.org/djoveryde/Contigo.svg?branch=master)](https://travis-ci.org/djoveryde/Contigo/)
