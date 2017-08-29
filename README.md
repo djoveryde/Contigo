@@ -5,7 +5,7 @@
 ![Minecraft Forge v13.20.1.2425][forge]
 ![Minecraft v1.11.2][mc]
 ![Java JDK v1.8][java]
-![Spigot 1.11.2 Snapshot ][spigot]
+![Spigot 1.11.2 Snapshot][spigot]
 
 ### What's Contigo?
 Contigo is a fork of Thermos, a craftbukkit forge server for Minecraft 1.7.10. After Thermos was discontinued, Contigo was created to allow active members of the Minecraft coding community to optimize it and provide fixes in a timely manner.
