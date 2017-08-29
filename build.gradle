@@ -29,7 +29,7 @@ buildscript {
     }
     dependencies {
         classpath files('FGS.jar')
-        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.0-SNAPSHOT'
     }
 }
 
@@ -78,15 +78,15 @@ repositories {
 }
 
 minecraft {
-    version = '1.7.10'
-    mcpVersion = '9.08'
+    version = '1.11.2'
+    mcpVersion = '9.37'
     mainClass = 'cpw.mods.fml.relauncher.ServerLaunchWrapper'
     tweakClass = 'cpw.mods.fml.common.launcher.FMLTweaker'
     installerVersion = "1.4"
-    srgExtra "PK: org/bukkit/craftbukkit org/bukkit/craftbukkit/v1_7_R4"
+    srgExtra "PK: org/bukkit/craftbukkit org/bukkit/craftbukkit/v1_11_R1"
 }
 
-group = 'cyberdynecc'
+group = 'djoveryde'
 
 ext.buildInfoCached = null;
 
@@ -121,14 +121,14 @@ def gitInfo(String key) {
     return key ? gitInfoCached[key] : gitInfoCached;
 }
 
-ext.mcVersion = "1.7.10"
+ext.mcVersion = "1.11.2"
 ext.forgeVersion = VersionParser.parseForgeRevision(file('src/main/resources/fmlversion.properties'))
 ext.revision = project.hasProperty('revision') ? project.getProperty('revision') : buildInfo('nextBuildNumber')
 version = "${mcVersion}-${forgeVersion}.${revision}"
 if (project.hasProperty('officialBuild')) println "Updated Thermos version: ${version}"
 
 launch4j {
-    jreMinVersion = '1.7.0'
+    jreMinVersion = '1.8.0'
 }
 
 configurations {
@@ -164,7 +164,7 @@ dependencies {
     libraries 'org.xerial:sqlite-jdbc:3.7.2'
     libraries 'mysql:mysql-connector-java:5.1.14'
     libraries 'javax.persistence:persistence-api:1.0.2'
-    libraries 'net.minecraft:server:1.7.10'
+    libraries 'net.minecraft:server:1.11.2'
     libraries 'pw.prok:KImagine:0.2.0@jar'
     libraries 'org.apache.httpcomponents:httpclient:4.4.1'
     libraries 'net.openhft:affinity:3.0.1'
@@ -201,12 +201,12 @@ def generateManifest(boolean legacy = false) {
             'Thermos-Channel'       : project.name,
             'Thermos-Version'       : project.version,
             'Thermos-Legacy'        : legacy,
-            'Implementation-Vendor' : 'CyberdyneCC',
+            'Implementation-Vendor' : 'djoveryde',
             'Implementation-Title'  : project.name,
             'Implementation-Version': project.version,
             'Specification-Vendor'  : 'Bukkit Team',
             'Specification-Title'   : 'Bukkit',
-            'Specification-Version' : '1.7.10-R0.1-SNAPSHOT',
+            'Specification-Version' : '1.11.2-R0.1-SNAPSHOT',
             'Forge-Version'         : VersionParser.parseForgeVersion(file('forge/src/main/java/net/minecraftforge/common/ForgeVersion.java'), file('src/main/resources/fmlversion.properties')),
             'TweakClass'            : 'cpw.mods.fml.common.launcher.FMLTweaker',
             'Main-Class'            : 'cpw.mods.fml.relauncher.ServerLaunchWrapper',
