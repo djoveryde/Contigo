@@ -41,7 +41,7 @@ Feel free to drop in on the Contigo Discord chat [here](https://discord.gg/cNpac
 
 ## Contributing
 
-Please read the [guide](https://github.com/gcallant/Contigo/blob/master/CONTRIBUTING.md) on how to contribute - Contigo always needs improvements :smile:
+Please read the [guide](https://github.com/djoveryde/Contigo/blob/master/CONTRIBUTING.md) on how to contribute - Contigo always needs improvements :smile:
 
 ## Build Requirements
 * Java 8u101 JDK or higher
