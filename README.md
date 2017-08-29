@@ -1,6 +1,6 @@
 # Contigo - djoveryde updated version attempt.
 
-![Contigo](cat-thermos.jpg)
+![Contigo](contigo_icon.png)
 [![Build Status](https://travis-ci.org/djoveryde/Contigo.svg?branch=master)](https://travis-ci.org/djoveryde/Contigo/)
 ![Minecraft Forge v13.20.1.2425][forge]
 ![Minecraft v1.11.2][mc]
