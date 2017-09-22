@@ -7,7 +7,7 @@ buildscript {
     repositories {
         maven {
             name 'prok'
-            url 'https://djoveryde.000webhostapp.com/kcauldron/files/'
+            url 'http://build.resurgent.network/kcauldron/files/'
         }
         maven {
             name 'forge'
@@ -54,7 +54,7 @@ repositories {
     }
     maven {
         name 'prok'
-        url 'https://djoveryde.000webhostapp.com/kcauldron/files/'
+        url 'http://build.resurgent.network/kcauldron/files/'
     }
     maven {
         name 'forge'
